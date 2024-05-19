@@ -26,6 +26,12 @@ const AppProvider = ({ children }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const fetchQuestions= () => {
+    
+  }
+
+  
+
   return (
     <AppContext.Provider
       value={{
