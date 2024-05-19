@@ -21,6 +21,7 @@ const AppProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState([])
   const [index, setIndex] = useState(0)
+  const [correct, setCorret] = useState(0)
 
 
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
