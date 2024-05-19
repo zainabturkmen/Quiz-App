@@ -26,13 +26,12 @@ const AppProvider = ({ children }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const fetchQuestions= async(url) => {
+  const fetchQuestions = async (url) => {
     setLoading(true);
     setWaiting(false);
-    const response = axios(url).catch(error => console.log(error))
-  }
-
-  
+    const response = await axios(url).catch((error) => console.log(error));
+    console.log(response);
+  };
 
   return (
     <AppContext.Provider
