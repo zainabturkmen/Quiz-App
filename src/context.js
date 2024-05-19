@@ -17,7 +17,8 @@ const tempUrl =
 const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
-  const [waiting, setWaiting] = useState(true)
+  const [waiting, setWaiting] = useState(true);
+  const [loading, setLoading] = useState(true);
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
 }
 // make sure use
