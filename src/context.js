@@ -26,7 +26,8 @@ const AppProvider = ({ children }) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const fetchQuestions= () => {
+  const fetchQuestions= async() => {
+    setLoading(true);
     
   }
 
