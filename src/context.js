@@ -35,6 +35,7 @@ const AppProvider = ({ children }) => {
       const data = response.data.results;
         if (data.length > 0) {
           setQuestions(data)
+          setLoading(false)
         }
     }else{
       setWaiting(true)
