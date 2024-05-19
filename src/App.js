@@ -15,9 +15,18 @@ function App() {
     return <Loading />;
   }
 
-  const {question, incorrect_answers, correct_answer} = question[0];
+  const { question, incorrect_answers, correct_answer } = questions[0];
   const answers = [...incorrect_answers, correct_answer];
-  return <main>quiz app</main>;
+  return (
+    <main>
+      <Modal />
+      <section className="quiz">
+        <P className="correct-answers">
+          correct answers : {correct}/
+        </P>
+      </section>
+    </main>
+  );
 }
 
 export default App;
