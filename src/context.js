@@ -33,6 +33,11 @@ const AppProvider = ({ children }) => {
     console.log(response);
   };
 
+  useEffect(()=> {
+    fetchQuestions(tempUrl)
+  }, [])
+
+
   return (
     <AppContext.Provider
       value={{
