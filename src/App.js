@@ -7,15 +7,15 @@ import Modal from "./Modal";
 function App() {
   const { waiting, loading, questions, index, correct, error, isModalOpen } =
     useGlobalContext();
-    if (waiting) {
-      return <SetupForm />
-    }
+  if (waiting) {
+    return <SetupForm />;
+  }
 
-    if (loading) {
-      return <Loading />
-    }
+  if (loading) {
+    return <Loading />;
+  }
 
-    
+  return <main>quiz app</main>;
 }
 
 export default App;
