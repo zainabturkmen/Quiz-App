@@ -37,6 +37,7 @@ const AppProvider = ({ children }) => {
         setQuestions(data);
         setLoading(false);
         setWaiting(false)
+        setError(false)
       }
     } else {
       setWaiting(true);
