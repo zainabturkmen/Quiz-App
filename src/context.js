@@ -33,19 +33,18 @@ const AppProvider = ({ children }) => {
     console.log(response);
     if (response) {
       const data = response.data.results;
-        if (data.length > 0) {
-          setQuestions(data)
-          setLoading(false)
-        }
-    }else{
-      setWaiting(true)
+      if (data.length > 0) {
+        setQuestions(data);
+        setLoading(false);
+      }
+    } else {
+      setWaiting(true);
     }
   };
 
-  useEffect(()=> {
-    fetchQuestions(tempUrl)
-  }, [])
-
+  useEffect(() => {
+    fetchQuestions(tempUrl);
+  }, []);
 
   return (
     <AppContext.Provider
