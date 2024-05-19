@@ -33,6 +33,9 @@ const AppProvider = ({ children }) => {
     console.log(response);
     if (response) {
       const data = response.data.results;
+        if (data.length > 0) {
+          
+        }
     }else{
       setWaiting(true)
     }
