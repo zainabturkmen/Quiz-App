@@ -21,9 +21,9 @@ function App() {
     <main>
       {/* <Modal /> */}
       <section className="quiz">
-        <P className="correct-answers">
+        <p className="correct-answers">
           correct answers : {correct}/{index}
-        </P>
+        </p>
       </section>
     </main>
   );
