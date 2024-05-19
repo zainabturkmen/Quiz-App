@@ -31,6 +31,9 @@ const AppProvider = ({ children }) => {
     setWaiting(false);
     const response = await axios(url).catch((error) => console.log(error));
     console.log(response);
+    if (response) {
+      
+    }
   };
 
   useEffect(()=> {
