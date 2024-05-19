@@ -6,6 +6,6 @@ const Loading = () => {
       <div className='loading'></div>
     </main>
   )
-}
+} 
 
 export default Loading
