@@ -46,7 +46,7 @@ const AppProvider = ({ children }) => {
         setError(true);
       }
     } else {
-      setWaiting(true);
+      setWaiting(false);
     }
   };
 
