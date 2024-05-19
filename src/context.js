@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
   const [waiting, setWaiting] = useState(true);
   const [loading, setLoading] = useState(false);
   const [questions, setQuestions] = useState([])
-
+  const [index, setIndex] = useState()
 
 
   return <AppContext.Provider value='hello'>{children}</AppContext.Provider>
