@@ -15,6 +15,7 @@ function App() {
     return <Loading />;
   }
 
+  console.log(questions[]);
   return <main>quiz app</main>;
 }
 
