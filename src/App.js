@@ -29,7 +29,7 @@ function App() {
           <h2 dangerouslySetInnerHTML={{__html:question}} />
           <div className="btn-container">
             {correct.map((answer, index)=> {
-              return 
+              return <button dkey={index} className="answer-btn" angerouslySetInnerHTML={{__html:answer}}/>
             })}
           </div>
         </article>
