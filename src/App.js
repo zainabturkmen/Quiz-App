@@ -26,7 +26,12 @@ function App() {
           correct answers : {correct}/{index}
         </p>
         <article className="container">
-          <h2 dangerouslySetInnerHTML={{__html}} />
+          <h2 dangerouslySetInnerHTML={{__html:question}} />
+          <div className="btn-container">
+            {correct.map((answer, index)=> {
+
+            })}
+          </div>
         </article>
       </section>
     </main>
