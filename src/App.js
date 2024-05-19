@@ -15,8 +15,7 @@ function App() {
     return <Loading />;
   }
 
-  
-  const { question, incorrect_answers, correct_answer } = questions[0];
+  const { question, incorrect_answers, correct_answer } = questions[index];
   const answers = [...incorrect_answers, correct_answer];
   return (
     <main>
@@ -26,13 +25,21 @@ function App() {
           correct answers : {correct}/{index}
         </p>
         <article className="container">
-          <h2 dangerouslySetInnerHTML={{__html:question}} />
+          <h2 dangerouslySetInnerHTML={{ __html: question }} />
           <div className="btn-container">
-            {correct.map((answer, index)=> {
-              return <button dkey={index} className="answer-btn" angerouslySetInnerHTML={{__html:answer}}/>
+            {answers.map((answer, index) => {
+              return (
+                <button
+                  key={index}
+                  className="answer-btn"
+                  angerouslySetInnerHTML={{ __html: answer }}
+                  // onClick={}
+                />
+              );
             })}
           </div>
         </article>
+        <button className="next-question">next question</button>
       </section>
     </main>
   );
