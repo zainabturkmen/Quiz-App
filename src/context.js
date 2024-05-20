@@ -85,7 +85,11 @@ const AppProvider = ({ children }) => {
 
 
   const handleChange = (e) => {
-    
+    console.log(e);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
   }
 
 
