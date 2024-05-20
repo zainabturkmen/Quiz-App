@@ -22,6 +22,7 @@ const SetupForm = () => {
             />
           </div>
           {error && <P className="error">can't generate questions, please try different options</P>}
+          <button type="submit" onClick={handleSubmit} className="sumbit-btn">start</button>
         </form>
       </section>
     </main>
