@@ -33,7 +33,6 @@ function App() {
                   key={index}
                   className="answer-btn"
                   angerouslySetInnerHTML={{ __html: answer }}
-                  // onClick={}
                 />
               );
             })}
