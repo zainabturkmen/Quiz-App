@@ -21,8 +21,9 @@ const SetupForm = () => {
               onChange={handleChange}
             />
           </div>
-          {error && <P className="error">can't generate questions, please try different options</P>}
-          <button type="submit" onClick={handleSubmit} className="sumbit-btn">start</button>
+          <div className="form-control"></div>
+          {error && <p className="error">can't generate questions, please try different options</p>}
+          <button type="submit" onClick={handleSubmit} className="submit-btn">start</button>
         </form>
       </section>
     </main>
