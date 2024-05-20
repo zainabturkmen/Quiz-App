@@ -56,9 +56,9 @@ const AppProvider = ({ children }) => {
       if (index > questions.length -1) {
         return 0
       }else{
-        
+
+        return index;
       }
-      return index;
     });
   };
 
