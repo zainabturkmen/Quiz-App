@@ -5,7 +5,9 @@ const SetupForm = () => {
   const { quiz, handleChange, handleSubmit,error} = useGlobalContext();
   return <main>
     <section className='quiz quiz-small'>
-      <form className='setup-form'></form>
+      <form className='setup-form'>
+        <div className='form-control'></div>
+      </form>
     </section>
   </main> 
 }
