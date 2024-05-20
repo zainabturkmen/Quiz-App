@@ -53,7 +53,9 @@ const AppProvider = ({ children }) => {
   const nextQuestion = () => {
     setIndex((oldIndex) => {
       const index = oldIndex + 1;
-      if (index) {
+      if (index > questions.length -1) {
+        return 0
+      }else{
         
       }
       return index;
