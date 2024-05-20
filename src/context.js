@@ -51,7 +51,9 @@ const AppProvider = ({ children }) => {
   };
 
   const nextQuestion = () => {
-    
+    setIndex(() => {
+      
+    })
   }
 
   useEffect(() => {
