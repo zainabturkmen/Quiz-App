@@ -83,23 +83,20 @@ const AppProvider = ({ children }) => {
     setIsModalOpen(false);
   };
 
-
   const handleChange = (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    setQuiz({...quiz, [name]:value})
-  }
+    const name = e.target.name;
+    const value = e.target.value;
+    setQuiz({ ...quiz, [name]: value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const {amount, category, difficulty} = quiz
+    const { amount, category, difficulty } = quiz;
     const tempUrl =
       "https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple";
 
-      const url = `${API_ENDPOINT}`;
-
-  }
-
+    const url = `${API_ENDPOINT}`;
+  };
 
   return (
     <AppContext.Provider
@@ -116,9 +113,8 @@ const AppProvider = ({ children }) => {
         closeModal,
         quiz,
         handleChange,
-        handleSubmit
+        handleSubmit,
       }}
-
     >
       {children}
     </AppContext.Provider>
