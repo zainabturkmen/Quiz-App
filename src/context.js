@@ -93,6 +93,7 @@ const AppProvider = ({ children }) => {
     e.preventDefault();
     const { amount, category, difficulty } = quiz;
     const url = `${API_ENDPOINT}amount=${amount}$difficulty={difficulty}&category=${table[category]}&type=multiple`;
+    fetchQuestions(url); 
   };
 
   return (
