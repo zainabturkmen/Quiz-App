@@ -9,8 +9,9 @@ const Modal = () => {
         isModalOpen ? "modal-container isOpen" : "modal-container"
       }`}
     >
-      <div className="modal-container">
+      <div className="modal-content">
         <h2>congrats!</h2>
+        <p>You answerd</p>
       </div>
     </div>
   );
