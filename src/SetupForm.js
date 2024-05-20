@@ -8,6 +8,7 @@ const SetupForm = () => {
       <section className="quiz quiz-small">
         <form className="setup-form">
           <h2>setup quiz</h2>
+          {/* amount */}
           <div className="form-control">
             <label htmlFor="amount">number of questions</label>
             <input
@@ -21,9 +22,18 @@ const SetupForm = () => {
               onChange={handleChange}
             />
           </div>
-          <div className="form-control"></div>
-          {error && <p className="error">can't generate questions, please try different options</p>}
-          <button type="submit" onClick={handleSubmit} className="submit-btn">start</button>
+          {/* category */}
+          <div className="form-control">
+            
+          </div>
+          {error && (
+            <p className="error">
+              can't generate questions, please try different options
+            </p>
+          )}
+          <button type="submit" onClick={handleSubmit} className="submit-btn">
+            start
+          </button>
         </form>
       </section>
     </main>
