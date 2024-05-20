@@ -6,7 +6,9 @@ const SetupForm = () => {
   return <main>
     <section className='quiz quiz-small'>
       <form className='setup-form'>
-        <div className='form-control'></div>
+        <div className='form-control'>
+          <label>number of questions</label>
+        </div>
       </form>
     </section>
   </main> 
