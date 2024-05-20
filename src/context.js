@@ -83,9 +83,10 @@ const AppProvider = ({ children }) => {
     setIsModalOpen(false);
   };
 
-  useEffect(() => {
-    fetchQuestions(tempUrl);
-  }, []);
+
+  
+
+
 
   return (
     <AppContext.Provider
