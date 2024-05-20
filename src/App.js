@@ -14,6 +14,7 @@ function App() {
     error,
     isModalOpen,
     nextQuestion,
+    checkAnswer,
   } = useGlobalContext();
   if (waiting) {
     return <SetupForm />;
@@ -37,7 +38,11 @@ function App() {
           <div className="btn-container">
             {answers.map((answer, index) => {
               return (
-                <button key={index} className="answer-btn">
+                <button
+                  key={index}
+                  className="answer-btn"
+                  onClick={() => checkAnswer}
+                >
                   {answer}
                 </button>
               );
