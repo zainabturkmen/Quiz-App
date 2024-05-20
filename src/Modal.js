@@ -8,7 +8,9 @@ const Modal = () => {
       className={`${
         isModalOpen ? "modal-container isOpen" : "modal-container"
       }`}
-    ></div>
+    >
+      <div className="modal-container"></div>
+    </div>
   );
 };
 
