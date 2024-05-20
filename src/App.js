@@ -25,7 +25,9 @@ function App() {
   }
 
   const { question, incorrect_answers, correct_answer } = questions[index];
-  const answers = [...incorrect_answers, correct_answer];
+  // const answers = [...incorrect_answers, correct_answer];
+  let answers = [...incorrect_answers];
+  const tempIndex = Math.random
   return (
     <main>
       <Modal />
