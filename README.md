@@ -3,11 +3,11 @@
 ### Run Locally
 
 ```
-pnpm install and pnpm run
+pnpm install & pnpm run
 ```
 ### OR
 ```
-npm install and npm run
+npm install & npm run
 ```
 
 #### ScreenShots
