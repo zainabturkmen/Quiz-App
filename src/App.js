@@ -37,15 +37,16 @@ function App() {
           <div className="btn-container">
             {answers.map((answer, index) => {
               return (
-                <button
-                  key={index}
-                  className="answer-btn"
-                >{answer}</button>
+                <button key={index} className="answer-btn">
+                  {answer}
+                </button>
               );
             })}
           </div>
         </article>
-        <button className="next-question">next question</button>
+        <button className="next-question" onClick={nextQuestion}>
+          next question
+        </button>
       </section>
     </main>
   );
