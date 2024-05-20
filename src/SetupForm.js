@@ -21,7 +21,7 @@ const SetupForm = () => {
               onChange={handleChange}
             />
           </div>
-          {error && <P className="error">can't generate questions, please try again</P>}
+          {error && <P className="error">can't generate questions, please try different options</P>}
         </form>
       </section>
     </main>
