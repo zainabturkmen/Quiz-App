@@ -74,7 +74,7 @@ const AppProvider = ({ children }) => {
 
   const closeModal = () => {
     setWaiting(true);
-    setCorret(0)
+    setCorret(0);
     setIsModalOpen(false);
   };
 
@@ -94,6 +94,7 @@ const AppProvider = ({ children }) => {
         isModalOpen,
         nextQuestion,
         checkAnswer,
+        closeModal,
       }}
     >
       {children}
