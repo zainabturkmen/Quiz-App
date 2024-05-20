@@ -24,7 +24,7 @@ const SetupForm = () => {
           </div>
           {/* category */}
           <div className="form-control">
-            <label htmlFor="category"></label>
+            <label htmlFor="category">category</label>
           </div>
           {error && (
             <p className="error">
