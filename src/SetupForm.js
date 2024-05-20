@@ -21,7 +21,7 @@ const SetupForm = () => {
               onChange={handleChange}
             />
           </div>
-          {}
+          {error}
         </form>
       </section>
     </main>
