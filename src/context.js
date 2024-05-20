@@ -92,6 +92,7 @@ const AppProvider = ({ children }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const {amount, category, difficulty} = quiz
     const tempUrl =
       "https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple";
 
