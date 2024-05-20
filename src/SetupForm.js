@@ -25,7 +25,13 @@ const SetupForm = () => {
           {/* category */}
           <div className="form-control">
             <label htmlFor="category">category</label>
-            <select name="category" id="category" className="form-input"></select>
+            <select
+              name="category"
+              id="category"
+              className="form-input"
+              value={quiz.category}
+              onChange={handleChange}
+            ></select>
           </div>
           {error && (
             <p className="error">
