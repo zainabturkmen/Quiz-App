@@ -31,6 +31,10 @@ function App() {
   if (tempIndex === 3) {
     answers.push(correct_answer)
   }
+  else{
+    answers.push(answers[tempIndex])
+    answers[tempIndex] = correct_answer
+  }
   return (
     <main>
       <Modal />
