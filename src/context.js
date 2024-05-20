@@ -53,11 +53,10 @@ const AppProvider = ({ children }) => {
   const nextQuestion = () => {
     setIndex((oldIndex) => {
       const index = oldIndex + 1;
-      if (index > questions.length -1) {
-        openModal()
-        return 0
-      }else{
-
+      if (index > questions.length - 1) {
+        openModal();
+        return 0;
+      } else {
         return index;
       }
     });
@@ -67,15 +66,16 @@ const AppProvider = ({ children }) => {
     if (value) {
       setCorret((oldState) => oldState + 1);
     }
-  }
+  };
 
   const openModal = () => {
-    setIsModalOpen(true)
-  }
+    setIsModalOpen(true);
+  };
 
   const closeModal = () => {
-    setIsModalOpen(false)
-  }
+    setWaiting(true);
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     fetchQuestions(tempUrl);
