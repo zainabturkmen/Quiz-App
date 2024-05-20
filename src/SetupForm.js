@@ -47,9 +47,9 @@ const SetupForm = () => {
               value={quiz.difficulty}
               onChange={handleChange}
             >
-              <option value="sports">sports</option>
-              <option value="history">history</option>
-              <option value="politics">politics</option>
+              <option value="easy">easy</option>
+              <option value="medium">medium</option>
+              <option value="hard">hard</option>
             </select>
           </div>
           {error && (
