@@ -32,8 +32,7 @@ function App() {
                 <button
                   key={index}
                   className="answer-btn"
-                  angerouslySetInnerHTML={{ __html: answer }}
-                />
+                >{answer}</button>
               );
             })}
           </div>
