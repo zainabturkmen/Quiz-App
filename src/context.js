@@ -64,9 +64,7 @@ const AppProvider = ({ children }) => {
 
   const checkAnswer = (value) => {
     if (value) {
-      setCorret((oldState) => {
-
-      })
+      setCorret((oldState) => oldState + 1);
     }
   }
 
