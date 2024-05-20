@@ -51,8 +51,8 @@ const AppProvider = ({ children }) => {
   };
 
   const nextQuestion = () => {
-    setIndex(() => {
-      
+    setIndex((oldIndex) => {
+
     })
   }
 
