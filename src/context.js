@@ -69,7 +69,7 @@ const AppProvider = ({ children }) => {
   }
 
   const openModal = () => {
-    
+    setIndex()
   }
 
   useEffect(() => {
