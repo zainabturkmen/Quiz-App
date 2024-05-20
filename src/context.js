@@ -68,6 +68,10 @@ const AppProvider = ({ children }) => {
     }
   }
 
+  const openModal = () => {
+    
+  }
+
   useEffect(() => {
     fetchQuestions(tempUrl);
   }, []);
