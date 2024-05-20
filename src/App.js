@@ -41,7 +41,7 @@ function App() {
                 <button
                   key={index}
                   className="answer-btn"
-                  onClick={() => checkAnswer}
+                  onClick={() => checkAnswer()}
                 >
                   {answer}
                 </button>
