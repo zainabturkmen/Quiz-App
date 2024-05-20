@@ -96,6 +96,8 @@ const AppProvider = ({ children }) => {
     const tempUrl =
       "https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple";
 
+      const url = ``
+
   }
 
 
