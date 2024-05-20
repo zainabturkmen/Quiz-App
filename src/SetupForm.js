@@ -9,7 +9,7 @@ const SetupForm = () => {
         <form className="setup-form">
           <div className="form-control">
             <label htmlFor="amount">number of questions</label>
-            <input type="number" name="amount" id="amount" />
+            <input type="number" name="amount" id="amount" value={}/>
           </div>
         </form>
       </section>
