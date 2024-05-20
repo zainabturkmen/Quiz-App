@@ -62,8 +62,10 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  const checkAnswer = () => {
-    
+  const checkAnswer = (value) => {
+    if (value) {
+      setCorret(() => )
+    }
   }
 
   useEffect(() => {
