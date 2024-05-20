@@ -74,6 +74,7 @@ const AppProvider = ({ children }) => {
 
   const closeModal = () => {
     setWaiting(true);
+    setCorret(0)
     setIsModalOpen(false);
   };
 
