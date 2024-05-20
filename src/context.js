@@ -50,6 +50,10 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const nextQuestion = () => {
+    
+  }
+
   useEffect(() => {
     fetchQuestions(tempUrl);
   }, []);
