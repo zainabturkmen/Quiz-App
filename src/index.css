@@ -207,7 +207,7 @@ main {
   text-transform: capitalize;
   font-weight: 700;
   letter-spacing: var(--spacing);
-  font-size: 1rem;
+  font-size: .8rem;
   background: #ffb100;
   color: var(--clr-black);
   transition: var(--transition);
